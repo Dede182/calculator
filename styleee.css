@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.87);
+    transition: all .5s ease;
+
+}
+.wrapper{
+    width:380px;
+    height:80vh;
+    padding:30px 50px;
+}
+button{
+    display:inline-block;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+    transition:all .5s ease;
+    border:none;
+}
+
+button:hover{
+    opacity:0.8;
+    transition:all .5s ease;
+
+}
+.span-dele{
+    grid-column:span 2;
+    background:rgb(255, 132, 0)!important;
+}
+.button-gp{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    grid-template-rows: repeat(5,70px);
+    grid-gap:3px;
+}
+.output{
+    width:100%;
+    display:flex;
+    height:10vh;
+    background:rgb(255, 255, 255);
+    margin-bottom:20px;
+    font-size:1.3em;
+    flex-direction: column;
+    padding:5px 15px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.previousdisplay{
+    color:rgba(0, 0, 0, 0.748);
+    font-weight:700;
+}
+.currentdiaplay{
+    color:#000;
+    font-weight:700;
+    font-size:1.5em;
+}
+.icon{
+    position:absolute;
+    top:5px;
+    right:10px;
+    cursor:pointer;
+}
+#AA{
+    display:none;
+
+}
+.fas{
+    font-size: 2em;
+    background:#fff;
+    border-radius: 50%;
+    padding:10px 15px;
+    transition: all .5s ease;
+}
+
+.dark{
+    background:#000;
+    color:#fff;
+    transition: all .5s ease;
+
+}
+.light{
+    background:rgba(226, 223, 223, 0.571);
+    transition: all .5s ease;
+
+}
+.light button,.light .output{
+    background:#000;
+    color:#fff;
+}
+.light .previousdisplay,.light .currentdiaplay{
+    color:#fff;
+}
